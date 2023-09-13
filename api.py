@@ -31,7 +31,7 @@ def create_completion():
         answer = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "Imagine que tu es pharmacien, voici un json des problème de santé que ma pharmacie soigne avec le produit associé : \n" + str(data_json) + "\n Je vais te donner mes problèmes et tu devras me répondre quel produit pour chaque problème est associé. Je veux que tu mettes le nom du produit entre crochets. \n"},
+                {"role": "system", "content": "Imagine que tu es pharmacien, voici un json des problème de santé que ma pharmacie soigne avec le produit associé : \n" + str(data_json) + "\n Je vais te donner mes problèmes et tu devras me répondre quel produit pour chaque problème est associé. Je veux que tu mettes le nom du produit entre crochets. Lorsque le problème énoncé est une pathologie grave ou aucun des produit ne peuvent les guerir redirige la personne vers un spécialiste sinon reponds juste le bon produit. \n"},
                 {"role": "user", "content": prompt['question']}
                 ]
         )
