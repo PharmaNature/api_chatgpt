@@ -1,0 +1,29 @@
+{
+    "products": [
+    {
+    "name": "dolgi flash",
+    "problématique": ["douleur musculaire", "règles douloureuse", "courbatures", "céphalés", "douleurs articulaire", "tout type d'inflamations", "sportifs"]
+    },
+    {
+    "name": "myodétente",
+    "problématique": ["mobilité", "cervicales, dos et lombaires", "fonction musculaire"]
+    },
+    {
+    "name": "oméga 3",
+    "problématique": ["fonction cérébrales, maintien d'une vision normale, système cardiovasculaire, fonction cardiaque"]
+    },
+    {
+    "name": "activein",
+    "problématique": ["jambe lourde", "jambes poteaux", "hémorroide", "Lymphoedèmes"]
+    },
+    {
+    "name": "seren+",
+    "problématique": ["stress émotionnel", "ralaxation mental", "humeur positive"]
+    },
+    {
+    "name": "gastrobiotic",
+    "problématique": ["probleme intestinaux", "résistance de l'organisme"]
+    }
+   ]
+   }
+   
