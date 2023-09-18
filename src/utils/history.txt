@@ -1,0 +1,5 @@
+Voici également l'échange que tu as eu avec l'utilisateur si besoin : 
+-Utilisateur: j'ai des hémoroïdes en ce moment, tu connais un produit pour soulager ?
+-GPT: Nous vous conseillons le produit "Activein" qui peut vous aider à soulager les hémorroïdes.
+-Utilisateur: ça fonctionne aussi pour la fatigue musculaire ? 
+-GPT: Nous vous conseillons également le produit "Dolgi Flash" qui peut vous aider à soulager la fatigue musculaire.

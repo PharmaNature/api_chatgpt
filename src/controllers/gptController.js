@@ -24,11 +24,13 @@ module.exports.goodAnswer = async (req, res) => {
     const message = req.body.message;
 
     try {
-        const answer = await fileMessage(message);
+        var answer = "";
         if (req.session.count === undefined) {
             req.session.count = 0
+            answer = await fileMessage(message,true);
         }
         else{
+            answer = await fileMessage(message,false);
             req.session.count++
         }
         console.log(req.session.count);
