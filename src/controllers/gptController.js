@@ -25,7 +25,13 @@ module.exports.goodAnswer = async (req, res) => {
 
     try {
         const answer = await fileMessage(message);
-
+        if (req.session.count === undefined) {
+            req.session.count = 0
+        }
+        else{
+            req.session.count++
+        }
+        console.log(req.session.count);
         return res.send(answer[0].message.content);
 
     } catch (error) {

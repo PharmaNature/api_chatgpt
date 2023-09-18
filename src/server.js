@@ -1,4 +1,5 @@
 const express = require("express");
+const session = require('express-session')
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -18,6 +19,13 @@ const corsOptions = {
   preflightContinue: false,
 };
 app.use(cors(corsOptions));
+
+// creation de la session 
+app.use(session({
+  secret: 'my-secret-key',
+  resave: false,
+  saveUninitialized: true
+}))
 
 // Body-parser
 app.use(bodyParser.json());
