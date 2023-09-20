@@ -22,19 +22,10 @@ module.exports.answer = async (req, res) => {
 
 module.exports.goodAnswer = async (req, res) => {
     const message = req.body.message;
-
+    const user_id = req.body.user_id;
     try {
-        var answer = "";
-        if (req.session.count === undefined) {
-            req.session.count = 0
-            answer = await fileMessage(message,true);
-        }
-        else{
-            answer = await fileMessage(message,false);
-            req.session.count++
-        }
-        console.log(req.session.count);
-        return res.send(answer[0].message.content);
+        const answer = await fileMessage(message,user_id);
+        return res.send({ response:answer[0].message.content});
 
     } catch (error) {
         if (error.message === 'Message invalide') {

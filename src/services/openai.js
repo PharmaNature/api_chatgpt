@@ -2,7 +2,8 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const OpenAi = require('openai');
-const jsonInput = require('../utils/produits.json');
+const jsonInput = require('../utils/data.json');
+const { getConversation, loadConversations, addToConversation, deleteConversation, shouldDeleteConversation } = require('../utils/conversationUtil.js')
 
 const openai = new OpenAi({
     apiKey: process.env.TOKEN_GPT
@@ -37,27 +38,34 @@ async function simpleMessage(message) {
 
 const fsPromises = fs.promises;
 
-async function fileMessage(message, isTheFirstMessage) {
-    let contenu = "";
-    let historique = "";
-    let historiqueConv = "";
+async function fileMessage(message, user_id) {
+    var context = "";
+    var user_conversation = "";
     const contextFilePath = path.join(__dirname, '../utils/context.txt');
-    const historyFilePath = path.join(__dirname, '../utils/history.txt');
+    
     try {
-        contenu = await fsPromises.readFile(contextFilePath, 'utf8');
-        historique = await fsPromises.readFile(historyFilePath, 'utf8')
-        const productsInput = JSON.stringify(jsonInput);
+        // récupère le context
+        context = await fsPromises.readFile(contextFilePath, 'utf8');
+        
+        // récupère les conversations de tout le monde
+        var all_conversations = loadConversations(fs,path)
+        // récupère la conversation de l'utilisateur
+        user_conversation = getConversation(all_conversations,user_id)
+        // récupère tous les produits
+        const all_product = JSON.stringify(jsonInput);
 
         if (!message || typeof message !== 'string') {
             throw new Error('Message invalide');
         }
+        // contexte + tous les produits 
+        var content = context + all_product
 
-        console.log(contenu)
-        var content = contenu + productsInput
         // si ce n'est pas le premier message, ajout de l'historique à la conversation
-        if (!isTheFirstMessage) {
-            content += historique
+        if (user_conversation.message !== "") {
+            content += "Voici également l'échange que tu as eu avec l'utilisateur si besoin : \n"
+            content += user_conversation.message
         }
+
         const completion = await openai.chat.completions.create({
             messages: [
                 {
@@ -74,27 +82,21 @@ async function fileMessage(message, isTheFirstMessage) {
         });
 
         console.log(completion)
-        // Si c'est le premier 
-        if (isTheFirstMessage) {
-            historiqueConv += "Voici également l'échange que tu as eu avec l'utilisateur si besoin : "
-            historique = ""
-        }
-        historiqueConv += historique
-        historiqueConv += "\n"
-        historiqueConv += "-Utilisateur: " + message
-        historiqueConv += "\n"
-        historiqueConv += "-GPT: " + completion.choices[0].message.content
-        console.log(historiqueConv);
-
-
-        fs.writeFile(historyFilePath, historiqueConv, (err) => {
-            if (err) {
-                console.error('Une erreur s\'est produite lors de l\'écriture du fichier :', err);
-                return;
+        console.log(completion.usage.total_tokens);
+        // modification du cout des discussions avec le G
+        var cout = fs.readFileSync(path.join(__dirname, '../utils/cout.txt'), 'utf8');
+        var coutFloat = parseFloat(cout)
+        coutFloat += ((completion.usage.prompt_tokens/1000) * 0.0015) + ((completion.usage.completion_tokens/1000) * 0.002)
+        fs.writeFileSync(path.join(__dirname, '../utils/cout.txt'), String(coutFloat), 'utf8');
+        var all = all_conversations
+        for(let key in all){
+            if(shouldDeleteConversation(all_conversations,key)){
+            all_conversations = deleteConversation(all_conversations,key)
             }
-            console.log('Le fichier a été écrit avec succès.');
-        });
-
+        }
+        getConversation(all_conversations,user_id)
+        addToConversation(fs,path,all_conversations,user_id, message,completion.choices[0].message.content)
+        
         if (completion.choices) {
             return completion.choices;
         } else {

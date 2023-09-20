@@ -1,0 +1,450 @@
+[
+    {
+        "Nom": "Cystalgic",
+        "Description": "Soulage les gênes et sensibilité urinaires, occasionelle ou récidivante",
+        "Allégations": [
+            "Contribue et ilimine les bactéries ESCHERICHIA coli ou levure de type candida albicans"
+        ]
+    },
+    {
+        "Nom": "Dolgi Règle",
+        "Description": "Système endocannabinoïde-antalgique-relaxant",
+        "Allégations": [
+            "Régulation et normalisation du cycle menstruel",
+            "Crampe abdominale-spasme",
+            "Maux de tête",
+            "Douleurs abdominales",
+            "Crampes abdominales",
+            "Spasmes"
+        ]
+    },
+    {
+        "Nom": "Endomet",
+        "Description": "Anti-Angiogénique - Stress oxydatif",
+        "Allégations": [
+            "Saignements importants",
+            "Douleurs pelviennes",
+            "Douleurs lors des rapports sexuels",
+            "Douleurs lombaires",
+            "Troubles urinaires et digestifs"
+        ]
+    },
+    {
+        "Nom": "Menolya",
+        "Description": "Augmente les niveaux d'entérolactone",
+        "Allégations": [
+            "Diminu les symptomes de la ménopose"
+        ]
+    },
+    {
+        "Nom": "Prevent CYS",
+        "Description": "Restaure la flore vaginale",
+        "Allégations": [
+            "Inhibe l'adhérence des bactéries",
+            "Durétique"
+        ]
+    },
+    {
+        "Nom": "ATB",
+        "Description": "Protection / Acidité et sucs gastriques",
+        "Allégations": [
+            "Equilibre de la flore intestinale"
+        ]
+    },
+    {
+        "Nom": "Equilibre",
+        "Description": "Equilibre de la flore intestinale",
+        "Allégations": [
+            "Diarrhée",
+            "Constipation",
+            "Intolérance alimentaire"
+        ]
+    },
+    {
+        "Nom": "Essentiel",
+        "Description": "Equilibre de la flore intestinale",
+        "Allégations": [
+            "Constipation"
+        ]
+    },
+    {
+        "Nom": "Boulardii",
+        "Description": "Pare aux inconvénents des traitements antibiotiques",
+        "Allégations": [
+            "Agit dans tous les cas de la Tourista",
+            "Regénère les muqueuses intestinales",
+            "Apaise et regénère le colon irrité"
+        ]
+    },
+    {
+        "Nom": "Biotonic Adulte",
+        "Description": "Vitalité ",
+        "Allégations": [
+            "Immunité",
+            "Système nerveux"
+        ]
+    },
+    {
+        "Nom": "Biotonic Senior",
+        "Description": "Vitalité ",
+        "Allégations": [
+            "Immunité",
+            "Fonction connitive"
+        ]
+    },
+    {
+        "Nom": "Healive",
+        "Description": "Performance connitive",
+        "Allégations": [
+            "Performance physique",
+            "Performance psychique"
+        ]
+    },
+    {
+        "Nom": "Natural Vitamin Complex",
+        "Description": "Carrence en vitamine",
+        "Allégations": [
+            "Minéraux et anti-oxydant"
+        ]
+    },
+    {
+        "Nom": "Erecta",
+        "Description": "Stimule la libido",
+        "Allégations": [
+            "Améliore l'érection",
+            "Stimule la production de monoxyde d'azote",
+            "Améliore la circulation",
+            "Améliore la fonction érectile",
+            "Améliore le taux de testostérone"
+        ]
+    },
+    {
+        "Nom": "Levure de riz rouge",
+        "Description": "Maintien le taux de cholesterol",
+        "Allégations": [
+            "Santé vasculaire et cardiaque",
+            "Préviens des carrences en COQ10",
+            "Réduis la lipémie"
+        ]
+    },
+    {
+        "Nom": "Oméga 3",
+        "Description": "Fonction célébrale",
+        "Allégations": [
+            "Maintien d'une vision normale",
+            "Système cardiovasculaire",
+            "Fonction cardiaque"
+        ]
+    },
+    {
+        "Nom": "Ohptal Expert",
+        "Description": "Riche en acide gras Oméga 3",
+        "Allégations": [
+            "Vitamine minéraux",
+            "Lutéine",
+            "Zéaxanthine",
+            "Ultra pureté + Stabilité source d'oméga 3 / DHA",
+            "Lutéine et zéaxanthine sous forme brevetet hautement assimilé"
+        ]
+    },
+    {
+        "Nom": "Prostadim",
+        "Description": "Maintien une prostate saine",
+        "Allégations": [
+            "Soutien la fonction urinaire",
+            "Baisse de libido",
+            "Baisse de tension",
+            "Non éjaculation"
+        ]
+    },
+    {
+        "Nom": "Vitamine D3",
+        "Description": "Homéostasie Photocalcique : Squelette, articulation, dentition",
+        "Allégations": [
+            "Fonction musculaire",
+            "Répartition de l'ADN - Division cellulaire",
+            "Carrences : Ensoleillement insuffisant / Végétalisme",
+            "Éudes vs Covid 19 - Modulateur des défenses immunitaires"
+        ]
+    },
+    {
+        "Nom": "Zinc Vitamine D3",
+        "Description": "Fonctionnement normale du système immunitaire",
+        "Allégations": [
+            "Dimunition / Perte du goût, sens olfactif",
+            "Éudes vs Covid 19 - Modulateur des défenses immunitaires",
+            "Protection des cellules oxydatifs",
+            "Homéostasie photocalcique : Squelette, Articulation et Dentition"
+        ]
+    },
+    {
+        "Nom": "Activein",
+        "Description": "Veinotonique - Circulation veineuse - Anti-inflammatoire",
+        "Allégations": [
+            "Décongestion des tissus - Élimination des toxines",
+            "Résistance capillaire - Anti-oxydant",
+            "Jambes lourdes - Jampes poteaux",
+            "Hémoroïdes (même avec saignements)",
+            "Lymphoedème"
+        ]
+    },
+    {
+        "Nom": "Hémocalm",
+        "Description": "Vasoconstricteur",
+        "Allégations": [
+            "Hémostatique",
+            "Anti-inflammatoire",
+            "Aide à réduire les gonflements",
+            "Veinotonique ",
+            "Renforce le système vasculaire"
+        ]
+    },
+    {
+        "Nom": "Magnésium marin",
+        "Description": "Fatigue - Nervosité - Fonction musculaire",
+        "Allégations": [
+            "Stress et nervosité"
+        ]
+    },
+    {
+        "Nom": "Safran + Rhodiola",
+        "Description": "Recapture sérotonine",
+        "Allégations": [
+            "Monoamine oxydase",
+            "Régulation, sécrétion cortisale"
+        ]
+    },
+    {
+        "Nom": "Seren+ ",
+        "Description": "Etat de stress ",
+        "Allégations": [
+            "Symptomes dû au stress",
+            "Adaptation au stress émotionnel ",
+            "Favorise la relaxation mentale",
+            "Favorise une humeur positif"
+        ]
+    },
+    {
+        "Nom": "Sommeil+",
+        "Description": "Endormissement rapide",
+        "Allégations": [
+            "Diminue les réveils nocturnes",
+            "Sommeil réparateur"
+        ]
+    },
+    {
+        "Nom": "Allerfix",
+        "Description": "Efficacité du système immunitaire",
+        "Allégations": [
+            "Augmente la résistance physiologique",
+            "Anti-histaminique",
+            "Activité lénitive",
+            "Anti-inflammatoire"
+        ]
+    },
+    {
+        "Nom": "Bronchophyt",
+        "Description": "Apaise les voies respiratoires",
+        "Allégations": [
+            "Traite les infections respiratoires",
+            "Soulage l'inflammation des voies respiratoires"
+        ]
+    },
+    {
+        "Nom": "Sinusphyt",
+        "Description": "Traite les infections respiratoires",
+        "Allégations": [
+            "Défenses de l'organisme",
+            "Santé des voies aériennes supérieures",
+            "Anti-inflammatoire",
+            "Fludifie les mucositées nasales"
+        ]
+    },
+    {
+        "Nom": "Stop'Rub (Nez / Gorge)",
+        "Description": "Confort respiratoire",
+        "Allégations": [
+            "Défenses naturelles",
+            "Réduction de la fatigue"
+        ]
+    },
+    {
+        "Nom": "Stop'Rub Bio (Spray / Gorge) ",
+        "Description": "Antibactérien",
+        "Allégations": [
+            "Antiphongique ",
+            "Antiviral",
+            "Antalgique anésthésiant"
+        ]
+    },
+    {
+        "Nom": "Stop'Rub (Spray / Nez) ",
+        "Description": "Aide à nettoyer et dégager le nez",
+        "Allégations": [
+            "Stimule l'immunité"
+        ]
+    },
+    {
+        "Nom": "Stoptoux",
+        "Description": "Toux sèche / Toux grasse",
+        "Allégations": []
+    },
+    {
+        "Nom": "Acouphyt",
+        "Description": "Activateur des récepteurs du système endocannabinoïde",
+        "Allégations": [
+            "Protection des cellules ciliées",
+            "Stimule le système gabaergique",
+            "Protection des celulles contre le stress oxydatif"
+        ]
+    },
+    {
+        "Nom": "Artromax",
+        "Description": "Douleurs articulaires",
+        "Allégations": [
+            "Souplesse et Flexibilité",
+            "Capital osseux",
+            "Action réminéréalisante",
+            "Action antalgique",
+            "Action anti-inflammatoire",
+            "Action anti-arthrosique"
+        ]
+    },
+    {
+        "Nom": "Avovida",
+        "Description": "Arthrose",
+        "Allégations": []
+    },
+    {
+        "Nom": "Cephalgic",
+        "Description": "Maux de tête",
+        "Allégations": [
+            "Apaise les douleurs cérébrales",
+            "Soulage les migraines"
+        ]
+    },
+    {
+        "Nom": "Curcuma",
+        "Description": "Digestion",
+        "Allégations": [
+            "Foie",
+            "Articulation, Immunité, Equilibre nerveux"
+        ]
+    },
+    {
+        "Nom": "Dolgi Flash",
+        "Description": "Système endocannabinoïde",
+        "Allégations": [
+            "Douleurs musculaires",
+            "Règles douloureuses",
+            "Courbatures",
+            "Céphalées",
+            "Douleurs articulaires",
+            "Tout type d'inflamation",
+            "Sportif"
+        ]
+    },
+    {
+        "Nom": "Inflagic",
+        "Description": "Soulage les muscles et les articulations",
+        "Allégations": [
+            "Stimule le système immunitaire",
+            "Rage de dents",
+            "Otite",
+            "Gastrites ",
+            "Angine",
+            "Amygdalite ",
+            "Endorse",
+            "Arthrose",
+            "Arthrite",
+            "Polyartrite",
+            "MICI"
+        ]
+    },
+    {
+        "Nom": "Maxidetox",
+        "Description": "Contribue au confort digestif",
+        "Allégations": [
+            "Stimulation hépatique et rénal",
+            "Favorise l'élimination des toxines des émonctoires",
+            "Favorise les fonctions hépato-biliaire et rénale"
+        ]
+    },
+    {
+        "Nom": "Myodetente",
+        "Description": "Cervicale, Dos, Lombaires",
+        "Allégations": [
+            "Fonctions musculaires",
+            "Améliore la mobilité"
+        ]
+    },
+    {
+        "Nom": "Nauseastop",
+        "Description": "Nausée",
+        "Allégations": [
+            "Mal des transports",
+            "Digestion",
+            "Migraine ",
+            "Gère les effets secondaires des médicaments"
+        ]
+    },
+    {
+        "Nom": "Post-op",
+        "Description": "Tissus",
+        "Allégations": [
+            "Os",
+            "Circulation",
+            "Immunité",
+            "Pos-opératoire",
+            "Entorse fracture",
+            "Lésions internes",
+            "Usages vétérinaires"
+        ]
+    },
+    {
+        "Nom": "Stalyse",
+        "Description": "Bromélaine naturelle",
+        "Allégations": [
+            "Gélule gastro-résistance",
+            "Oedème ",
+            "Post-traumatique",
+            "Alternative prescription ",
+            "Cellulite ",
+            "Usages vétérinaires"
+        ]
+    },
+    {
+        "Nom": "Tendoguard",
+        "Description": "Collagène",
+        "Allégations": [
+            "Acide hyaluronique",
+            "Elasticité des tissus",
+            "Hydratation des tissus",
+            "Renforcement liquide cinoviale",
+            "Densification des tissus osseux",
+            "Restructuration cartilage"
+        ]
+    },
+    {
+        "Nom": "Anti-âge Collagène",
+        "Description": "Peau lisse et hydratée",
+        "Allégations": []
+    },
+    {
+        "Nom": "Anti-âge Hyaluronique ",
+        "Description": "Peau repulpée et aclatante",
+        "Allégations": []
+    },
+    {
+        "Nom": "Capillaire",
+        "Description": "Vitalité et croissance des cheveux",
+        "Allégations": [
+            "Résistance et force des cheveux"
+        ]
+    },
+    {
+        "Nom": "Expert Kératine",
+        "Description": "Beauté et vitalité des cheveux",
+        "Allégations": []
+    }
+]
