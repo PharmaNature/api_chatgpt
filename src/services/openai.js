@@ -39,8 +39,8 @@ async function simpleMessage(message) {
 const fsPromises = fs.promises;
 
 async function fileMessage(message, user_id) {
-    var context = "";
-    var user_conversation = "";
+    let context = "";
+    let user_conversation = "";
     const contextFilePath = path.join(__dirname, '../utils/context.txt');
     
     try {
@@ -48,7 +48,7 @@ async function fileMessage(message, user_id) {
         context = await fsPromises.readFile(contextFilePath, 'utf8');
         
         // récupère les conversations de tout le monde
-        var all_conversations = loadConversations(fs,path)
+        let all_conversations = loadConversations(fs,path)
         // récupère la conversation de l'utilisateur
         user_conversation = getConversation(all_conversations,user_id)
         // récupère tous les produits
@@ -58,7 +58,7 @@ async function fileMessage(message, user_id) {
             throw new Error('Message invalide');
         }
         // contexte + tous les produits 
-        var content = context + all_product
+        let content = context + all_product
 
         // si ce n'est pas le premier message, ajout de l'historique à la conversation
         if (user_conversation.message !== "") {
@@ -84,11 +84,11 @@ async function fileMessage(message, user_id) {
         console.log(completion)
         console.log(completion.usage.total_tokens);
         // modification du cout des discussions avec le G
-        var cout = fs.readFileSync(path.join(__dirname, '../utils/cout.txt'), 'utf8');
-        var coutFloat = parseFloat(cout)
+        let cout = fs.readFileSync(path.join(__dirname, '../utils/cout.txt'), 'utf8');
+        let coutFloat = parseFloat(cout)
         coutFloat += ((completion.usage.prompt_tokens/1000) * 0.0015) + ((completion.usage.completion_tokens/1000) * 0.002)
         fs.writeFileSync(path.join(__dirname, '../utils/cout.txt'), String(coutFloat), 'utf8');
-        var all = all_conversations
+        let all = all_conversations
         for(let key in all){
             if(shouldDeleteConversation(all_conversations,key)){
             all_conversations = deleteConversation(all_conversations,key)

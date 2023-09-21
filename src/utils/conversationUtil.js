@@ -32,7 +32,7 @@ function loadConversations(fs,path) {
     try {
         const filePath = path.join(__dirname,FILE_PATH);
         const data = fs.readFileSync(filePath, 'utf8');
-        var conversations = JSON.parse(data);
+        let conversations = JSON.parse(data);
         return conversations
     } catch (err) {
         console.error('Erreur lors du chargement du fichier JSON :', err);
