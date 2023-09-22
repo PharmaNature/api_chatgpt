@@ -6,7 +6,7 @@ module.exports.answer = async (req, res) => {
     try {
         const answer = await simpleMessage(message);
 
-        return res.send(answer[0].message.content);
+        return res.send({ response:answer[0].message.content});
 
     } catch (error) {
         if (error.message === 'Message invalide') {
