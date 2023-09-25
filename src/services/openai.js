@@ -23,6 +23,7 @@ async function simpleMessage(message) {
                 }
             ],
             model: 'gpt-3.5-turbo',
+            max_tokens: 200
         });
 
         if (completion.choices) {
